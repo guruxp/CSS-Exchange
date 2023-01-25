@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://microsoft.github.io/CSS-Exchange/Setup/SetupLogReviewer/">
+        <link rel="canonical" href="https://microsoft.github.io/CSS-Exchange/Admin/MigrateDLs/">
       
       
-        <link rel="prev" href="../SetupAssist/RebootPending/">
+        <link rel="prev" href="../Get-SimpleAuditLogReport/">
       
       
-        <link rel="next" href="../../Transport/Compute-TopExoRecipientsFromMessageTrace/">
+        <link rel="next" href="../Remove-CertExpiryNotifications/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
     
     
       
-        <title>SetupLogReviewer - Microsoft - CSS-Exchange</title>
+        <title>MigrateDLs - Microsoft - CSS-Exchange</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setuplogreviewer" class="md-skip">
+        <a href="#migratedls" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SetupLogReviewer
+              MigrateDLs
             
           </span>
         </div>
@@ -225,14 +225,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
         
@@ -258,7 +260,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
           Admin
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -276,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Admin/Clear-MailboxPermission/" class="md-nav__link">
+      <a href="../Clear-MailboxPermission/" class="md-nav__link">
         Clear-MailboxPermission
       </a>
     </li>
@@ -290,7 +292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Admin/CrossTenantMailboxMigrationValidation/" class="md-nav__link">
+      <a href="../CrossTenantMailboxMigrationValidation/" class="md-nav__link">
         Cross-TenantMailboxMigrationValidation
       </a>
     </li>
@@ -304,7 +306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Admin/Find-AmbiguousSids/" class="md-nav__link">
+      <a href="../Find-AmbiguousSids/" class="md-nav__link">
         Find-AmbiguousSids
       </a>
     </li>
@@ -318,7 +320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Admin/Get-EASMailboxLogs/" class="md-nav__link">
+      <a href="../Get-EASMailboxLogs/" class="md-nav__link">
         Get-EASMailboxLogs
       </a>
     </li>
@@ -332,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Admin/Get-SimpleAuditLogReport/" class="md-nav__link">
+      <a href="../Get-SimpleAuditLogReport/" class="md-nav__link">
         Get-SimpleAuditLogReport
       </a>
     </li>
@@ -344,11 +346,86 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Admin/MigrateDLs/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MigrateDLs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         MigrateDLs
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    DESCRIPTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    PARAMETERS
+  </a>
+  
+    <nav class="md-nav" aria-label="PARAMETERS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csvfile" class="md-nav__link">
+    CSVfile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logpath" class="md-nav__link">
+    LogPath
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    EXAMPLE
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -360,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Admin/Remove-CertExpiryNotifications/" class="md-nav__link">
+      <a href="../Remove-CertExpiryNotifications/" class="md-nav__link">
         Remove-CertExpiryNotifications
       </a>
     </li>
@@ -374,7 +451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Admin/Reset-ScanEngineVersion/" class="md-nav__link">
+      <a href="../Reset-ScanEngineVersion/" class="md-nav__link">
         Reset-ScanEngineVersion
       </a>
     </li>
@@ -388,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Admin/SetUnifiedContentPath/" class="md-nav__link">
+      <a href="../SetUnifiedContentPath/" class="md-nav__link">
         SetUnifiedContentPath
       </a>
     </li>
@@ -402,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Admin/Test-AMSI/" class="md-nav__link">
+      <a href="../Test-AMSI/" class="md-nav__link">
         Test-AMSI
       </a>
     </li>
@@ -1685,16 +1762,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
       
       
         
@@ -1710,7 +1785,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_12" tabindex="0" aria-expanded="true">
+        <label class="md-nav__link" for="__nav_12" tabindex="0" aria-expanded="false">
           Setup
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -1728,7 +1803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CopyMissingDlls/" class="md-nav__link">
+      <a href="../../Setup/CopyMissingDlls/" class="md-nav__link">
         CopyMissingDlls
       </a>
     </li>
@@ -1742,7 +1817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../FixInstallerCache/" class="md-nav__link">
+      <a href="../../Setup/FixInstallerCache/" class="md-nav__link">
         FixInstallerCache
       </a>
     </li>
@@ -1756,7 +1831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Set-ExchAVExclusions/" class="md-nav__link">
+      <a href="../../Setup/Set-ExchAVExclusions/" class="md-nav__link">
         Set-ExchAVExclusions
       </a>
     </li>
@@ -1794,7 +1869,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../SetupAssist/">SetupAssist</a>
+          <a href="../../Setup/SetupAssist/">SetupAssist</a>
           
             <label for="__nav_12_4">
               <span class="md-nav__icon md-icon"></span>
@@ -1817,7 +1892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SetupAssist/ComputersContainer/" class="md-nav__link">
+      <a href="../../Setup/SetupAssist/ComputersContainer/" class="md-nav__link">
         ComputersContainer
       </a>
     </li>
@@ -1831,7 +1906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SetupAssist/ReadOnlyDomainControllerContainer/" class="md-nav__link">
+      <a href="../../Setup/SetupAssist/ReadOnlyDomainControllerContainer/" class="md-nav__link">
         ReadOnlyDomainControllerContainer
       </a>
     </li>
@@ -1845,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SetupAssist/RebootPending/" class="md-nav__link">
+      <a href="../../Setup/SetupAssist/RebootPending/" class="md-nav__link">
         RebootPending
       </a>
     </li>
@@ -1864,21 +1939,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Setup/SetupLogReviewer/" class="md-nav__link">
         SetupLogReviewer
       </a>
-      
     </li>
   
 
@@ -1979,6 +2044,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    DESCRIPTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    PARAMETERS
+  </a>
+  
+    <nav class="md-nav" aria-label="PARAMETERS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csvfile" class="md-nav__link">
+    CSVfile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logpath" class="md-nav__link">
+    LogPath
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    EXAMPLE
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1996,35 +2110,45 @@
 
 
 
-<h1 id="setuplogreviewer">SetupLogReviewer</h1>
-<p>Download the latest release: <a href="https://github.com/microsoft/CSS-Exchange/releases/latest/download/SetupLogReviewer.ps1">SetupLogReviewer.ps1</a></p>
-<p>This script is meant to be run against the Exchange Setup Logs located at <code>C:\ExchangeSetupLogs\ExchangeSetup.log</code>. You can run this on the server, or on a personal computer.</p>
-<p>It currently checks for common prerequisite issues, clearly calling out if you need up run /PrepareAD in your environment and calls out where it needs to be run. It also checks for some other common issue that we have seen in support that we call out and display the actions to the screen.</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[string]SetupLog</td>
-<td>The location of the Exchange Setup Log that needs to be reviewed</td>
-</tr>
-<tr>
-<td>[switch]DelegatedSetup</td>
-<td>Use this switch if you are troubleshooting Prerequisites of a Delegated Setup issue</td>
-</tr>
-</tbody>
-</table>
+<h1 id="migratedls">MigrateDLs</h1>
+<p>Download the latest release: <a href="https://github.com/microsoft/CSS-Exchange/releases/latest/download/MigrateDLs.ps1">CrossTenantMailboxMigrationValidation.ps1</a></p>
+<h2 id="description">DESCRIPTION</h2>
+<p>This script offers the ability to migrate Distribution Lists (aka Distribution Groups) that are sitting in Exchage On-premises and need to be moved to Exchange Online, providing in this way, the ability for end users to manage them once their mailboxes have been migrated to Exchange Online.
+It will process every DL listed on the CSV file and will do the following:
+- Check if the DL is present on-premises (if it isn't, the entry will be bypassed and will move on to the next one)
+- Check if the DL is present in EXO (if it is, the entry will be bypassed and will move on to the next one)
+- Export all the properties of the on-premises DL and store them on a file matching the entry within the specified LogPath.
+- Create the DL on EXO and stamp the properties from the on-premises DL.
+- Validate every property of the DL, ensuring the on-premises ones match the one on EXO (including members). If a property is not matching, it will be shown on the screen and will be logged on the 'Failed-' log file that corresponds to the object being processed.
+- If validation is successful, we will remove the DL from on-premises (check if the object was removed) and create a mail-contact on-premises, having the ExternalEmailAddress pointing to the provisioned onmicrosoft.com email address of the DL on EXO.
+- Once the Mail-Contact has been validated, we will rename the log file to start with 'OK-'
+- If the process fails on any step, we will rename the log file to start with 'Failed-'</p>
+<p>## PRE-REQUISITES:</p>
+<p>For the process to work correctly, we need to have the following things in consideration:
+- Make sure the DL's you include on the CSV file are present in Exchange On-premises AND NOT SYNCED to Exchange Online anymore (in other words, the DL should not be present in EXO)
+- Running this script, needs to be done from the Exchange Management Shell on-premises, with the Exchange Online management module installed (if you need to install the module, running EMS or Powershell as an admin, run 'Install-Module ExchangeOnlineManagement')
+- The account running this scripts needs to have at least the 'Recipient Management' Exchange management role assigned on both ends (on-premises and online).
+- The CSV file needs to have just one column named 'DL'
+- The specified log path should not end with '\'
+- To avoid any possible throttling applied to Powershell, I recommend running batches of no more than 100 entries per day.</p>
+<h2 id="parameters">PARAMETERS</h2>
+<h3 id="csvfile">CSVfile</h3>
+<div class="highlight"><pre><span></span><code>CSV file of the DL&#39;s we will be migrating when running this script
+</code></pre></div>
+<h3 id="logpath">LogPath</h3>
+<div class="highlight"><pre><span></span><code>Temp path for storing DL props and logging of the process for each one of the entries listed on the CSV file
+</code></pre></div>
+<h2 id="example">EXAMPLE</h2>
+<div class="highlight"><pre><span></span><code>.\MigrateDLs.ps1 -CSV c:\Temp\myCSV.csv -LogPath C:\Temp
+This will import the specified CSV file and migrate the DL&#39;s listed there. For every one of them, their properties and the process details will be stores ont he specified path for logging.
+</code></pre></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
       
     
   </small>
